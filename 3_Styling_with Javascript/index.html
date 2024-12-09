@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Styling with JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: #007BFF;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .hover-box {
+      width: 150px;
+      height: 50px;
+      background-color: #28a745;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    #dynamicText {
+      font-size: 18px;
+      font-weight: bold;
+      color: #6c757d;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Styling with JavaScript</h1>
+
+  <!-- Task 1: HTML Structure -->
+  <div id="box" onclick="changeColor()">Click me to change color</div>
+
+  <div class="hover-box" id="hoverBox">Hover over me</div>
+
+  <button id="textButton">Change Text Style</button>
+  <p id="dynamicText">This is some text to style dynamically.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
